@@ -57,19 +57,20 @@ document.querySelectorAll('.ph[data-icon]').forEach((el) => {
 // ---------- Social feed scroller ----------
 // To use real photos, add them to assets/work/ and list them here as { img: 'assets/work/NAME.jpg', t: 'Caption' }
 const FEED = [
-  { i: 'cameras', t: '32-camera NVR overhaul' },
-  { i: 'wifi', t: 'Venue Wi-Fi upgrade' },
-  { i: 'managed-it', t: 'Rack rebuild & cleanup' },
-  { i: 'tools', t: 'Low-voltage build-out' },
-  { i: 'cybersecurity', t: 'Firewall & secure Wi-Fi' },
-  { i: 'cameras', t: 'Ring camera system' },
-  { i: 'wifi', t: 'Network rack & cabling' },
-  { i: 'tools', t: 'POS network setup' },
+  { img: 'assets/work/bar-climate-rack.jpg', t: 'Climate-Controlled UniFi Network Rack' },
+  { img: 'assets/work/bar-rack-install.jpg', t: 'Network rack install' },
+  { img: 'assets/work/bar-wifi-ap-install.jpg', t: 'Wi-Fi access point install' },
+  { img: 'assets/work/salon-cable-testing.jpg', t: 'Cable termination & testing' },
+  { img: 'assets/work/salon-rack-pre-internet.jpg', t: 'Clean rack build, pre-internet' },
+  { img: 'assets/work/salon-shelf-cabling.jpg', t: 'Equipment shelf & cabling install' },
+  { img: 'assets/work/warehouse-unifi-system.jpg', t: 'Climate-Controlled UniFi System' },
+  { img: 'assets/work/warehouse-rack-inside.jpg', t: 'Inside the rack: UniFi switching, NVR & UPS' },
+  { img: 'assets/work/salon-rack-live.jpg', t: 'Live & cooled: finished rack' },
 ];
 const track = document.getElementById('feedTrack');
 if (track) {
   const card = (p) => p.img
-    ? `<div class="post"><img src="${p.img}" alt="${p.t}" loading="lazy"><b>${p.t}</b></div>`
+    ? `<div class="post"><img src="${p.img}" alt="${p.t}" loading="lazy"><b>${p.t.replace(/&/g, '&amp;')}</b></div>`
     : `<div class="post"><div class="ph" style="--i:url(assets/icons/${p.i}.png)"></div><b>${p.t.replace(/&/g, '&amp;')}</b></div>`;
   const html = FEED.map(card).join('');
   track.innerHTML = html + html;
