@@ -65,7 +65,7 @@ const FEED = [
   { img: 'assets/work/salon-shelf-cabling.jpg', t: 'Equipment shelf & cabling install' },
   { img: 'assets/work/warehouse-unifi-system.jpg', t: 'Climate-Controlled UniFi System' },
   { img: 'assets/work/warehouse-rack-inside.jpg', t: 'Inside the rack: UniFi switching, NVR & UPS' },
-  { img: 'assets/work/salon-rack-live.jpg', t: 'Live & cooled: finished rack' },
+  { img: 'assets/work/bar-under-counter-install.jpg', t: 'Under-bar wiring install' },
 ];
 const track = document.getElementById('feedTrack');
 if (track) {
