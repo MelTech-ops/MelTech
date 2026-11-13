@@ -103,6 +103,10 @@ h1 em,h2 em{font-style:normal;color:var(--pink);text-shadow:0 0 26px rgba(214,14
 @media(max-width:520px){.dock{grid-template-columns:repeat(2,1fr)}.dock button::before{display:none}.dock button:last-child{grid-column:span 2}}
 
 /* SERVICES */
+.rex{position:relative;width:150px;height:150px;margin:0 auto 34px}
+.rex img{position:absolute;inset:14px;width:122px;height:122px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px rgba(230,150,255,.55),0 0 40px rgba(214,110,255,.45),0 0 100px rgba(120,90,255,.3);animation:float 9s ease-in-out infinite}
+.rex .orbit{inset:0}
+@media(max-width:600px){.rex{width:120px;height:120px;margin-bottom:26px}.rex img{inset:12px;width:96px;height:96px}}
 .svc-wrap{display:grid;grid-template-columns:290px 1fr;gap:40px;align-items:start}
 .svc-picker{display:flex;flex-direction:column;border-top:1px solid var(--line)}
 .svc-btn{display:flex;align-items:center;gap:18px;padding:20px 6px;border-bottom:1px solid var(--line);text-align:left;font-weight:400;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);transition:.35s var(--ease);position:relative}
