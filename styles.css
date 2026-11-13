@@ -138,7 +138,9 @@ h1 em,h2 em{font-style:normal;color:var(--pink);text-shadow:0 0 26px rgba(214,14
 .serve-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:24px}
 .loc,.res{position:relative;overflow:hidden;padding:42px;border:1px solid var(--line)}
 .loc{background:linear-gradient(160deg,rgba(14,32,74,.6),rgba(5,13,34,.8))}
-.res{background:linear-gradient(90deg,rgba(2,6,15,.94) 40%,rgba(2,6,15,.4)),url(assets/hero.jpg) 35% 100%/170% auto no-repeat,#04102b}
+.res{background:radial-gradient(60% 90% at 88% 50%,rgba(160,90,255,.16),transparent 70%),linear-gradient(160deg,rgba(14,32,74,.6),rgba(5,13,34,.8));padding-right:230px}
+.res::after{content:"";position:absolute;right:44px;top:50%;width:150px;height:150px;transform:translateY(-50%);border-radius:50%;background:url(assets/helmet.png) center/cover;box-shadow:0 0 0 1px rgba(230,150,255,.5),0 0 34px rgba(214,110,255,.4),0 0 80px rgba(120,90,255,.25)}
+@media(max-width:600px){.res{padding-right:42px;padding-top:150px}.res::after{width:96px;height:96px;top:34px;right:auto;left:42px;transform:none}}
 .loc h3,.res h3{font-size:1.5rem;margin:16px 0 12px}
 .loc p,.res p{color:var(--muted);max-width:420px}
 .pin{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2)}
