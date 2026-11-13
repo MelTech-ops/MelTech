@@ -57,8 +57,8 @@ document.querySelectorAll('.ph[data-icon]').forEach((el) => {
 // ---------- Social feed scroller ----------
 // To use real photos, add them to assets/work/ and list them here as { img: 'assets/work/NAME.jpg', t: 'Caption' }
 const FEED = [
-  { img: 'assets/work/bar-climate-rack.jpg', t: 'Climate-Controlled UniFi Network Rack' },
   { img: 'assets/work/bar-rack-install.jpg', t: 'Network rack install' },
+  { img: 'assets/work/bar-climate-rack.jpg', t: 'Climate-Controlled UniFi Network Rack' },
   { img: 'assets/work/bar-wifi-ap-install.jpg', t: 'Wi-Fi access point install' },
   { img: 'assets/work/salon-cable-testing.jpg', t: 'Cable termination & testing' },
   { img: 'assets/work/salon-rack-pre-internet.jpg', t: 'Clean rack build, pre-internet' },
